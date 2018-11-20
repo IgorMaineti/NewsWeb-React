@@ -1,0 +1,105 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */
+
+#root{
+  width: 85%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+   width: 80%;
+   margin: 5em auto;
+   display: grid;
+   grid-template-columns:repeat(12, 1fr);
+   grid-column-gap: 1em;
+   grid-row-gap: 1em;
+}
+
+.item1 {
+  display: flex;
+  grid-column: 1/7;
+}
+
+.item2 {
+  display: flex;
+  grid-column: 7/13;
+}
+
+.item3 {
+  display: flex;
+  grid-column: 1/5;
+}
+
+.item4 {
+  display: flex;
+  grid-column: 5/9;
+}
+
+.item5 {
+  display: flex;
+  grid-column: 9/13;
+}
+
+.item6 {
+  display: flex;
+  grid-column: 1/7;
+}
+
+.item7 { 
+  display: flex;
+  grid-column: 7/13;
+}
+.teste :hover{
+  box-shadow: 0.5px 0.5px grey !important;
+}
+.media {
+  height: 15em;
+}
+
+@media (max-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container > div {
+    margin-bottom: 10px;
+  } 
+}
+
+ 
